@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+:root {
+  --section-bg-color: hsl(0, 0%, 100%);
+  --body-bg-color: hsl(212, 45%, 89%);
+  --color-p-font: hsl(220, 15%, 55%);
+  --color-h1-font: hsl(218, 44%, 22%);
+}
+
+@media only screen and (min-width: 340px) {
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: var(--body-bg-color);
+        font-family: "Outfit", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+    
+      .section-card {
+        display: block;
+        background: var(--section-bg-color);
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 10px 10px 100px .1px var(--color-p-font);
+      }
+      .section-img {
+        height: 70%;
+        width: 100%;
+        padding: 20px;
+    
+        box-sizing: border-box;
+      }
+      .section-card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .section-text {
+        height: 38%;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+        text-align: center;
+      }
+      .section-text h1 {
+        color: var(--color-h1-font);
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+      .section-text p {
+        color: var(--color-p-font);
+        font-weight: 400;
+        font-size: .900rem;
+      }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-card {
+        height: 600px;
+        width: 380px;
+    }
+    .section-text h1 {
+        color: var(--color-h1-font);
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+      .section-text p {
+        color: var(--color-p-font);
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+}
